@@ -1,13 +1,13 @@
 from random import choice
 from sys import exit
 
-game_dict = {'1':'paper', '2':'stone', '3':'scissors'}
+game_dict = {'1':'paper', '2':'rock', '3':'scissors'}
 valid_input = ['1', '2', '3']
 score = {'player':0, 'cpu':0}
 
 
 def get_player_input():
-    player_input = input("Please enter: 1 - for paper; 2 - for stone; 3 - for scissors: Any other character to quit: ")
+    player_input = input("Please enter: 1 - for paper; 2 - for rock; 3 - for scissors: Any other character to quit: ")
     if player_input not in valid_input:
         print("Game over!")
         print_the_result()
